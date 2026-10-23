@@ -343,7 +343,7 @@ def generar_pdf(nombre_paciente, edad_str, peso, medicamento, presentacion, deta
 # 3. INTERFAZ PRINCIPAL
 # ==============================
 st.markdown("<div class='main-title'>NN</div>", unsafe_allow_html=True)
-st.markdown("<div class='sub-title'>💖 Calculadora Pediátrica de Dosis 💖</div>", unsafe_allow_html=True)
+st.markdown("<div class='sub-title'> Calculadora Pediátrica de Dosis </div>", unsafe_allow_html=True)
 st.write("---")
 
 col1, col2 = st.columns(2)
