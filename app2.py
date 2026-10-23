@@ -302,7 +302,7 @@ def generar_pdf(nombre_paciente, edad_str, peso, medicamento, presentacion, deta
     pdf = FPDF()
     pdf.add_page()
     pdf.set_font("Arial", "B", 16)
-    pdf.cell(0, 10, "Receta Pediátrica - Melyssa Thayss Princesa Parche", ln=True, align="C")
+    pdf.cell(0, 10, "Receta Pediátrica", ln=True, align="C")
     pdf.ln(10)
     pdf.set_font("Arial", "", 12)
     pdf.cell(0, 8, f"Paciente: {nombre_paciente}", ln=True)
@@ -329,7 +329,7 @@ def generar_pdf(nombre_paciente, edad_str, peso, medicamento, presentacion, deta
         pdf.set_text_color(0,0,0)
     pdf.ln(10)
     pdf.set_font("Arial", "I", 10)
-    pdf.cell(0, 8, "Gracias por confiar en Melyssa Thayss Princesa Parche", ln=True, align="C")
+    pdf.cell(0, 8, "Gracias por confiar.", ln=True, align="C")
     salida_pdf = pdf.output(dest="S")
     
     # Si usas PyFPDF clásico (devuelve un string), lo pasamos a bytes
@@ -342,7 +342,7 @@ def generar_pdf(nombre_paciente, edad_str, peso, medicamento, presentacion, deta
 # ==============================
 # 3. INTERFAZ PRINCIPAL
 # ==============================
-st.markdown("<div class='main-title'>Melyssa Thayss Princesa Parche</div>", unsafe_allow_html=True)
+st.markdown("<div class='main-title'>NN</div>", unsafe_allow_html=True)
 st.markdown("<div class='sub-title'>💖 Calculadora Pediátrica de Dosis 💖</div>", unsafe_allow_html=True)
 st.write("---")
 
@@ -540,4 +540,4 @@ else:
 
 # Pie
 st.markdown("---")
-st.markdown("<center><small>Hecho con 💕 para la enfermera más hermosa: Melyssa Thayss Princesa Parche</small></center>", unsafe_allow_html=True)
+st.markdown("<center><small>Hecho NN</small></center>", unsafe_allow_html=True)
